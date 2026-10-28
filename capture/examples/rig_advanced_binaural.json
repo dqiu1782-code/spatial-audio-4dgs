@@ -1,0 +1,430 @@
+{
+  "name": "advanced_24_cams_360_binaural",
+  "tier": "advanced",
+  "stage": {
+    "target": [
+      0,
+      0,
+      1.3
+    ]
+  },
+  "view": {
+    "arc_deg": [
+      0,
+      360
+    ],
+    "note": "full ring, cameras every 15 deg"
+  },
+  "room": {
+    "size_m": [
+      8.0,
+      8.0,
+      3.0
+    ]
+  },
+  "sync": {
+    "method": "clap",
+    "note": "slate clap at the stage centre, visible to all cameras"
+  },
+  "room_tone": {
+    "seconds": [
+      5,
+      25
+    ]
+  },
+  "empty_plate": {
+    "seconds": [
+      5,
+      25
+    ],
+    "note": "actors off camera during the room tone: clean static background"
+  },
+  "cameras": [
+    {
+      "id": "DSLR-1",
+      "order": 1,
+      "angle_deg": 0,
+      "radius_m": 3.0,
+      "height_m": 1.2,
+      "device": "dslr",
+      "video": "DSLR-1.mkv",
+      "mics": [
+        {
+          "id": "binaural-1",
+          "device": "recorder",
+          "layout": "binaural",
+          "spacing_m": 0.17,
+          "offset_m": [
+            0.0,
+            -0.12,
+            0.0
+          ],
+          "audio": "binaural-1.flac",
+          "channels": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DSLR-2",
+      "order": 2,
+      "angle_deg": 15,
+      "radius_m": 3.0,
+      "height_m": 1.9,
+      "device": "dslr",
+      "video": "DSLR-2.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-3",
+      "order": 3,
+      "angle_deg": 30,
+      "radius_m": 3.0,
+      "height_m": 1.2,
+      "device": "dslr",
+      "video": "DSLR-3.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-4",
+      "order": 4,
+      "angle_deg": 45,
+      "radius_m": 3.0,
+      "height_m": 1.9,
+      "device": "dslr",
+      "video": "DSLR-4.mkv",
+      "mics": [
+        {
+          "id": "binaural-2",
+          "device": "recorder",
+          "layout": "binaural",
+          "spacing_m": 0.17,
+          "offset_m": [
+            0.0,
+            -0.12,
+            0.0
+          ],
+          "audio": "binaural-2.flac",
+          "channels": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DSLR-5",
+      "order": 5,
+      "angle_deg": 60,
+      "radius_m": 3.0,
+      "height_m": 1.2,
+      "device": "dslr",
+      "video": "DSLR-5.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-6",
+      "order": 6,
+      "angle_deg": 75,
+      "radius_m": 3.0,
+      "height_m": 1.9,
+      "device": "dslr",
+      "video": "DSLR-6.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-7",
+      "order": 7,
+      "angle_deg": 90,
+      "radius_m": 3.0,
+      "height_m": 1.2,
+      "device": "dslr",
+      "video": "DSLR-7.mkv",
+      "mics": [
+        {
+          "id": "binaural-3",
+          "device": "recorder",
+          "layout": "binaural",
+          "spacing_m": 0.17,
+          "offset_m": [
+            0.0,
+            -0.12,
+            0.0
+          ],
+          "audio": "binaural-3.flac",
+          "channels": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DSLR-8",
+      "order": 8,
+      "angle_deg": 105,
+      "radius_m": 3.0,
+      "height_m": 1.9,
+      "device": "dslr",
+      "video": "DSLR-8.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-9",
+      "order": 9,
+      "angle_deg": 120,
+      "radius_m": 3.0,
+      "height_m": 1.2,
+      "device": "dslr",
+      "video": "DSLR-9.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-10",
+      "order": 10,
+      "angle_deg": 135,
+      "radius_m": 3.0,
+      "height_m": 1.9,
+      "device": "dslr",
+      "video": "DSLR-10.mkv",
+      "mics": [
+        {
+          "id": "binaural-4",
+          "device": "recorder",
+          "layout": "binaural",
+          "spacing_m": 0.17,
+          "offset_m": [
+            0.0,
+            -0.12,
+            0.0
+          ],
+          "audio": "binaural-4.flac",
+          "channels": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DSLR-11",
+      "order": 11,
+      "angle_deg": 150,
+      "radius_m": 3.0,
+      "height_m": 1.2,
+      "device": "dslr",
+      "video": "DSLR-11.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-12",
+      "order": 12,
+      "angle_deg": 165,
+      "radius_m": 3.0,
+      "height_m": 1.9,
+      "device": "dslr",
+      "video": "DSLR-12.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-13",
+      "order": 13,
+      "angle_deg": 180,
+      "radius_m": 3.0,
+      "height_m": 1.2,
+      "device": "dslr",
+      "video": "DSLR-13.mkv",
+      "mics": [
+        {
+          "id": "binaural-5",
+          "device": "recorder",
+          "layout": "binaural",
+          "spacing_m": 0.17,
+          "offset_m": [
+            0.0,
+            -0.12,
+            0.0
+          ],
+          "audio": "binaural-5.flac",
+          "channels": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DSLR-14",
+      "order": 14,
+      "angle_deg": 195,
+      "radius_m": 3.0,
+      "height_m": 1.9,
+      "device": "dslr",
+      "video": "DSLR-14.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-15",
+      "order": 15,
+      "angle_deg": 210,
+      "radius_m": 3.0,
+      "height_m": 1.2,
+      "device": "dslr",
+      "video": "DSLR-15.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-16",
+      "order": 16,
+      "angle_deg": 225,
+      "radius_m": 3.0,
+      "height_m": 1.9,
+      "device": "dslr",
+      "video": "DSLR-16.mkv",
+      "mics": [
+        {
+          "id": "binaural-6",
+          "device": "recorder",
+          "layout": "binaural",
+          "spacing_m": 0.17,
+          "offset_m": [
+            0.0,
+            -0.12,
+            0.0
+          ],
+          "audio": "binaural-6.flac",
+          "channels": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DSLR-17",
+      "order": 17,
+      "angle_deg": 240,
+      "radius_m": 3.0,
+      "height_m": 1.2,
+      "device": "dslr",
+      "video": "DSLR-17.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-18",
+      "order": 18,
+      "angle_deg": 255,
+      "radius_m": 3.0,
+      "height_m": 1.9,
+      "device": "dslr",
+      "video": "DSLR-18.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-19",
+      "order": 19,
+      "angle_deg": 270,
+      "radius_m": 3.0,
+      "height_m": 1.2,
+      "device": "dslr",
+      "video": "DSLR-19.mkv",
+      "mics": [
+        {
+          "id": "binaural-7",
+          "device": "recorder",
+          "layout": "binaural",
+          "spacing_m": 0.17,
+          "offset_m": [
+            0.0,
+            -0.12,
+            0.0
+          ],
+          "audio": "binaural-7.flac",
+          "channels": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DSLR-20",
+      "order": 20,
+      "angle_deg": 285,
+      "radius_m": 3.0,
+      "height_m": 1.9,
+      "device": "dslr",
+      "video": "DSLR-20.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-21",
+      "order": 21,
+      "angle_deg": 300,
+      "radius_m": 3.0,
+      "height_m": 1.2,
+      "device": "dslr",
+      "video": "DSLR-21.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-22",
+      "order": 22,
+      "angle_deg": 315,
+      "radius_m": 3.0,
+      "height_m": 1.9,
+      "device": "dslr",
+      "video": "DSLR-22.mkv",
+      "mics": [
+        {
+          "id": "binaural-8",
+          "device": "recorder",
+          "layout": "binaural",
+          "spacing_m": 0.17,
+          "offset_m": [
+            0.0,
+            -0.12,
+            0.0
+          ],
+          "audio": "binaural-8.flac",
+          "channels": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DSLR-23",
+      "order": 23,
+      "angle_deg": 330,
+      "radius_m": 3.0,
+      "height_m": 1.2,
+      "device": "dslr",
+      "video": "DSLR-23.mkv",
+      "mics": []
+    },
+    {
+      "id": "DSLR-24",
+      "order": 24,
+      "angle_deg": 345,
+      "radius_m": 3.0,
+      "height_m": 1.9,
+      "device": "dslr",
+      "video": "DSLR-24.mkv",
+      "mics": []
+    }
+  ],
+  "lavaliers": [
+    {
+      "actor": "A",
+      "audio": "lav_A.wav"
+    },
+    {
+      "actor": "B",
+      "audio": "lav_B.wav"
+    }
+  ]
+}

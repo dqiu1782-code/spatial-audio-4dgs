@@ -1,0 +1,127 @@
+{
+  "name": "basic_9_phones_front120",
+  "tier": "basic",
+  "stage": {
+    "target": [
+      0.0,
+      0.0,
+      1.2
+    ]
+  },
+  "view": {
+    "arc_deg": [
+      -60,
+      60
+    ],
+    "note": "viewer can watch from the front 120 deg; cameras every 15 deg"
+  },
+  "room": {
+    "size_m": [
+      6.0,
+      5.0,
+      2.7
+    ]
+  },
+  "sync": {
+    "method": "clap",
+    "note": "clap 3 times at the stage centre after all phones are recording"
+  },
+  "room_tone": {
+    "seconds": [
+      6,
+      21
+    ],
+    "note": "everyone silent for 15 s right after the claps, actors off camera"
+  },
+  "empty_plate": {
+    "seconds": [
+      6,
+      21
+    ],
+    "note": "actors off camera during the room tone: clean static background"
+  },
+  "cameras": [
+    {
+      "id": "cam1",
+      "order": 1,
+      "angle_deg": -60,
+      "radius_m": 2.2,
+      "height_m": 1.1,
+      "device": "phone",
+      "video": "cam1.mp4"
+    },
+    {
+      "id": "cam2",
+      "order": 2,
+      "angle_deg": -45,
+      "radius_m": 2.2,
+      "height_m": 1.8,
+      "device": "phone",
+      "video": "cam2.mp4"
+    },
+    {
+      "id": "cam3",
+      "order": 3,
+      "angle_deg": -30,
+      "radius_m": 2.2,
+      "height_m": 1.1,
+      "device": "phone",
+      "video": "cam3.mp4"
+    },
+    {
+      "id": "cam4",
+      "order": 4,
+      "angle_deg": -15,
+      "radius_m": 2.2,
+      "height_m": 1.8,
+      "device": "phone",
+      "video": "cam4.mp4"
+    },
+    {
+      "id": "cam5",
+      "order": 5,
+      "angle_deg": 0,
+      "radius_m": 2.2,
+      "height_m": 1.1,
+      "device": "phone",
+      "video": "cam5.mp4"
+    },
+    {
+      "id": "cam6",
+      "order": 6,
+      "angle_deg": 15,
+      "radius_m": 2.2,
+      "height_m": 1.8,
+      "device": "phone",
+      "video": "cam6.mp4"
+    },
+    {
+      "id": "cam7",
+      "order": 7,
+      "angle_deg": 30,
+      "radius_m": 2.2,
+      "height_m": 1.1,
+      "device": "phone",
+      "video": "cam7.mp4"
+    },
+    {
+      "id": "cam8",
+      "order": 8,
+      "angle_deg": 45,
+      "radius_m": 2.2,
+      "height_m": 1.8,
+      "device": "phone",
+      "video": "cam8.mp4"
+    },
+    {
+      "id": "cam9",
+      "order": 9,
+      "angle_deg": 60,
+      "radius_m": 2.2,
+      "height_m": 1.1,
+      "device": "phone",
+      "video": "cam9.mp4"
+    }
+  ],
+  "lavaliers": []
+}

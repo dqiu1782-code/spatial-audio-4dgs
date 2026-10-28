@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" font-family="sans-serif">
+<rect width="100%" height="100%" fill="#fafafa"/>
+<rect x="12.4" y="53.7" width="495.2" height="412.7" fill="none" stroke="#999" stroke-dasharray="6 4"/>
+<path d="M 260.0 260.0 L 383.5 473.9 A 247.0 247.0 0 0 0 383.5 46.1 Z" fill="#fff6d8" stroke="#e0c060"/>
+<rect x="10" y="10" width="14" height="10" fill="#fff6d8" stroke="#e0c060"/><text x="30" y="19" font-size="11" fill="#a80">viewing arc 120 deg</text>
+<circle cx="260.0" cy="260.0" r="66.0" fill="#e8f0ff" stroke="#8aa"/>
+<text x="260.0" y="264.0" font-size="12" text-anchor="middle" fill="#557">stage</text>
+<text x="330.2" y="264.0" font-size="11" fill="#c33">front &#8594;</text>
+<line x1="350.8" y1="417.3" x2="332.2" y2="385.1" stroke="#333" stroke-width="2"/>
+<circle cx="350.8" cy="417.3" r="11" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="350.8" y="421.3" font-size="12" text-anchor="middle">1</text>
+<text x="363.8" y="442.8" font-size="9" text-anchor="middle" fill="#666">1.1m</text>
+<line x1="337.9" y1="424.7" x2="363.7" y2="409.8" stroke="#d55" stroke-width="2"/>
+<line x1="388.4" y1="388.4" x2="362.1" y2="362.1" stroke="#333" stroke-width="2"/>
+<circle cx="388.4" cy="388.4" r="11" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="388.4" y="392.4" font-size="12" text-anchor="middle">2</text>
+<text x="406.8" y="409.8" font-size="9" text-anchor="middle" fill="#666">1.8m</text>
+<line x1="377.9" y1="398.9" x2="398.9" y2="377.9" stroke="#d55" stroke-width="2"/>
+<line x1="417.3" y1="350.8" x2="385.1" y2="332.2" stroke="#333" stroke-width="2"/>
+<circle cx="417.3" cy="350.8" r="11" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="417.3" y="354.8" font-size="12" text-anchor="middle">3</text>
+<text x="439.8" y="366.8" font-size="9" text-anchor="middle" fill="#666">1.1m</text>
+<line x1="409.8" y1="363.7" x2="424.7" y2="337.9" stroke="#d55" stroke-width="2"/>
+<line x1="435.4" y1="307.0" x2="399.5" y2="297.4" stroke="#333" stroke-width="2"/>
+<circle cx="435.4" cy="307.0" r="11" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="435.4" y="311.0" font-size="12" text-anchor="middle">4</text>
+<text x="460.5" y="316.7" font-size="9" text-anchor="middle" fill="#666">1.8m</text>
+<line x1="431.6" y1="321.3" x2="439.2" y2="292.6" stroke="#d55" stroke-width="2"/>
+<line x1="441.6" y1="260.0" x2="404.4" y2="260.0" stroke="#333" stroke-width="2"/>
+<circle cx="441.6" cy="260.0" r="11" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="441.6" y="264.0" font-size="12" text-anchor="middle">5</text>
+<text x="467.6" y="263.0" font-size="9" text-anchor="middle" fill="#666">1.1m</text>
+<line x1="441.6" y1="274.9" x2="441.6" y2="245.1" stroke="#d55" stroke-width="2"/>
+<line x1="435.4" y1="213.0" x2="399.5" y2="222.6" stroke="#333" stroke-width="2"/>
+<circle cx="435.4" cy="213.0" r="11" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="435.4" y="217.0" font-size="12" text-anchor="middle">6</text>
+<text x="460.5" y="209.3" font-size="9" text-anchor="middle" fill="#666">1.8m</text>
+<line x1="439.2" y1="227.4" x2="431.6" y2="198.7" stroke="#d55" stroke-width="2"/>
+<line x1="417.3" y1="169.2" x2="385.1" y2="187.8" stroke="#333" stroke-width="2"/>
+<circle cx="417.3" cy="169.2" r="11" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="417.3" y="173.2" font-size="12" text-anchor="middle">7</text>
+<text x="439.8" y="159.2" font-size="9" text-anchor="middle" fill="#666">1.1m</text>
+<line x1="424.7" y1="182.1" x2="409.8" y2="156.3" stroke="#d55" stroke-width="2"/>
+<line x1="388.4" y1="131.6" x2="362.1" y2="157.9" stroke="#333" stroke-width="2"/>
+<circle cx="388.4" cy="131.6" r="11" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="388.4" y="135.6" font-size="12" text-anchor="middle">8</text>
+<text x="406.8" y="116.2" font-size="9" text-anchor="middle" fill="#666">1.8m</text>
+<line x1="398.9" y1="142.1" x2="377.9" y2="121.1" stroke="#d55" stroke-width="2"/>
+<line x1="350.8" y1="102.7" x2="332.2" y2="134.9" stroke="#333" stroke-width="2"/>
+<circle cx="350.8" cy="102.7" r="11" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="350.8" y="106.7" font-size="12" text-anchor="middle">9</text>
+<text x="363.8" y="83.2" font-size="9" text-anchor="middle" fill="#666">1.1m</text>
+<line x1="363.7" y1="110.2" x2="337.9" y2="95.3" stroke="#d55" stroke-width="2"/>
+</svg>

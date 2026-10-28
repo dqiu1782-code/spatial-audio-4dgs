@@ -1,0 +1,12 @@
+{
+  "_note": "media can be a video (mp4/mov) or wav; array can be stereo/tetra/hex or your own measured mic coordinates (camera frame: x right, y down, z forward, metres); pose is either image_name (the image name of one frame from this camera in COLMAP) or pos + R (camera-to-world rotation)",
+  "colmap": "scene/sparse/0",
+  "scale": 1.0,
+  "sync": "auto",
+  "cameras": [
+    {"name": "cam1", "media": "videos/cam1.mp4", "array": "stereo", "image_name": "cam1_00001.jpg"},
+    {"name": "cam2", "media": "videos/cam2.mp4", "array": "stereo", "image_name": "cam2_00001.jpg"},
+    {"name": "cam3", "media": "videos/cam3.mp4", "array": [[-0.07, 0, 0], [0.07, 0, 0], [0, -0.05, 0.02]],
+     "pos": [1.0, 2.0, 1.5], "R": [[1, 0, 0], [0, 0, -1], [0, 1, 0]]}
+  ]
+}

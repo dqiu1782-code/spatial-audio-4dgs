@@ -1,5 +1,5 @@
 """
-Braindance viewer: interactive 4DGS playback with listener-relative spatial audio.
+Spatial-audio 4DGS viewer: interactive 4DGS playback with listener-relative spatial audio.
 
 Video: 4DGaussians background + optional sound-anchored dynamic object layer (dynobj.pt),
        rendered on the GPU for the current camera pose and time.
@@ -8,8 +8,8 @@ Audio: localized source trajectory + dry signal, binaurally rendered for the cur
 Clock: the audio device is the master clock; falls back to wall clock without audio.
 
 Usage:
-  python braindance_viewer.py --model output/braindance_s --configs arguments/dnerf/braindance.py \
-      --sound E:/4dgs_data/braindance_s/sound --data E:/4dgs_data/braindance_s [--hrtf E:/replay/kemar]
+  python spatial_viewer.py --model output/my_scene --configs arguments/dnerf/my_scene.py \
+      --sound E:/4dgs_data/my_scene/sound --data E:/4dgs_data/my_scene [--hrtf E:/replay/kemar]
 
 With --hrtf, audio uses measured KEMAR HRIRs + early reflections + late reverb (spatial_hrtf.py);
 multi-source scenes (result.json "sources", e.g. Replay actors) require it.
@@ -316,7 +316,7 @@ def load_sound(sound_dir, use):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Braindance viewer: 4DGS + spatial audio")
+    ap = argparse.ArgumentParser(description="spatial-audio 4DGS viewer")
     ap.add_argument("--root", default=r"E:\4DGaussians-master", help="4DGaussians source directory")
     ap.add_argument("--model", required=True, help="training output dir (contains point_cloud/iteration_*)")
     ap.add_argument("--configs", default="", help="config file used for training")
@@ -359,7 +359,7 @@ def main():
           flush=True)
     W = H = a.res
     meta = {}
-    meta_p = os.path.join(a.data, "braindance_meta.json") if a.data else ""
+    meta_p = os.path.join(a.data, "scene_meta.json") if a.data else ""
     if meta_p and os.path.isfile(meta_p):
         meta = json.load(open(meta_p, encoding="utf-8"))
         if "w" in meta:
@@ -429,7 +429,7 @@ def main():
         pygame.key.stop_text_input()                # disables the IME so WASD reach the key state
     except Exception:
         pass
-    pygame.display.set_caption("Braindance | 4DGS + Spatial Audio")
+    pygame.display.set_caption("spatial-audio-4dgs | 4DGS + Spatial Audio")
     font = None
     # YaHei UI covers Latin and CJK (device names may be localized).
     for name in ("microsoftyaheiui", "microsoftyahei", "segoeui", None):

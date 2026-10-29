@@ -1,5 +1,5 @@
 """Convert the ImViD Opera sample (39 GoPros, 5 s, 60 fps, stereo audio per camera) into
-4DGaussians Blender/D-NeRF format + a sound scene for the Braindance viewer.
+4DGaussians Blender/D-NeRF format + a sound scene for the spatial-audio viewer (viewer/spatial_viewer.py).
 
 World: origin at the cameras' convergence point, z up (mean camera up), COLMAP units scaled
 by --mpu (metres per COLMAP unit, from imvid_scale.py) so that the output is in metres.
@@ -129,7 +129,7 @@ def main():
             "fov_x": fovx, "w": Wt, "h": Ht, "K": Kt.tolist(), "mpu_colmap": s,
             "norm": {"X": X.tolist(), "Rw": Rw.tolist(), "scale": s}, "cameras": cams_out,
             "time_mapping": "4DGS time = t_seconds / ((n_times-1)/fps)", "coords": "metres, z up, +x towards cameras"}
-    json.dump(meta, open(os.path.join(a.out, "braindance_meta.json"), "w"), indent=1)
+    json.dump(meta, open(os.path.join(a.out, "scene_meta.json"), "w"), indent=1)
     print(f"PREP_DONE {len(frames['train'])} train / {len(frames['test'])} test, {Wt}x{Ht}, fovx {math.degrees(fovx):.1f}")
 
 

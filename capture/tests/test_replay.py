@@ -3,7 +3,7 @@
   python tests/test_replay.py SC-1044
 Needs ../replay/replay_common.py, E:\\replay\\<seq>\\ (flac + sync.json from replay_sync.py).
 Calibrates on the first half, evaluates on the second half against the video-triangulated heads.
-Writes E:\\braindance\\capture\\out\\<seq>_selfcal.json and voice/ambience wav files.
+Writes capture/out/<seq>_selfcal.json and voice/ambience wav files.
 """
 import json
 import os

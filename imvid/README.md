@@ -1,6 +1,6 @@
 # imvid: full pipeline on real multi-camera audio-visual data
 
-ImViD Opera sample (Tsinghua, CVPR 2025, CC BY 4.0; `scene1_opera.zip` from the
+ImViD Opera sample (Z. Yang et al., ImViD: immersive volumetric videos for enhanced VR engagement, CVPR 2025; CC BY 4.0; `scene1_opera.zip` from the
 [ImViD GitHub release](https://github.com/Metaverse-AI-Lab-THU/ImViD/releases)):
 39 GoPros on a ~1.2 m spherical rig, 5 s at 60 fps, stereo audio on every camera.
 The dataset is not included here.
@@ -8,7 +8,7 @@ The dataset is not included here.
 | step | script | where |
 |---|---|---|
 | undistort, 960x540 frames at 10 fps, cam00 held out, Blender-style transforms | `imvid_prepare.py SRC OUT` | any machine (needs ffmpeg) |
-| person boxes (YOLOX-s ONNX via cv2.dnn), head/feet triangulation, metric scale from standing height | `imvid_track.py OUT yolox_s.onnx` | any |
+| person boxes (YOLOX-s [Ge et al. 2021], ONNX via cv2.dnn; weights not included), head/feet triangulation, metric scale from standing height | `imvid_track.py OUT yolox_s.onnx` | any |
 | move to metres, origin under the singer, z up | `imvid_finalize.py OUT` | any |
 | sound: voice-onset slate sync, SRP-PHAT localisation, beamformed dry voice, viewer sound scene | `imvid_audio.py OUT AUDIO_DIR` | any |
 | COLMAP init cloud from known poses, 4DGaussians training, held-out PSNR | `run_imvid.ps1` | Windows + CUDA |

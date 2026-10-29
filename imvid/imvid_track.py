@@ -84,7 +84,7 @@ def ransac_point(cand, cam, K, tol, rng):
 
 def main():
     data, model = sys.argv[1], sys.argv[2]
-    meta = json.load(open(os.path.join(data, "braindance_meta.json")))
+    meta = json.load(open(os.path.join(data, "scene_meta.json")))
     names = sorted(meta["cameras"])
     n_t = meta["n_times"]
     dd = os.path.join(data, "_det")

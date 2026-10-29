@@ -1,4 +1,4 @@
-# capture: general multi-camera / multi-mic capture for Braindance
+# capture: general multi-camera / multi-mic capture for spatial-audio 4DGS
 
 Rig spec -> clap sync -> mic self-calibration -> voice / ambience layers.
 
@@ -33,4 +33,4 @@ a clean static background.
 | basic: 9 phones, no close mics | - | 58.4 -> 29.3 cm (p90 113 -> 65) | 4.0 dB |
 
 Needs numpy, scipy (plus soundfile for `tests/test_replay.py`). Simulations are cached in
-`$BRAINDANCE_CACHE` or `capture/cache/`, keyed by the rig's acoustic content.
+`$SA4DGS_CACHE` or `capture/cache/`, keyed by the rig's acoustic content.

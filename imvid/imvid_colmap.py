@@ -58,7 +58,7 @@ def main():
     ap.add_argument("--points", type=int, default=120000)
     a = ap.parse_args()
     to_png(a.data)
-    meta = json.load(open(os.path.join(a.data, "braindance_meta.json")))
+    meta = json.load(open(os.path.join(a.data, "scene_meta.json")))
     W, H = meta["w"], meta["h"]
     K = np.array(meta["K"])
     frames = []

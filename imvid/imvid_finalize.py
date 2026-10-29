@@ -1,5 +1,5 @@
 """Move the prepared ImViD dataset into a metric world: origin on the floor under the singer, z up,
-metres (scale from imvid_track.py). Rewrites transforms_*.json, braindance_meta.json and
+metres (scale from imvid_track.py). Rewrites transforms_*.json, scene_meta.json and
 face_track.json in place (idempotent: skipped if already metric).
 
   python imvid_finalize.py DATA
@@ -13,7 +13,7 @@ import numpy as np
 
 def main():
     data = sys.argv[1]
-    mp = os.path.join(data, "braindance_meta.json")
+    mp = os.path.join(data, "scene_meta.json")
     meta = json.load(open(mp))
     if meta.get("metric"):
         print("already metric")

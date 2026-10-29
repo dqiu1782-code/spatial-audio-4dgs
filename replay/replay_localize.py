@@ -24,7 +24,7 @@ def main():
     data = sys.argv[1]
     sd = os.path.join(data, "sound")
     S = json.load(open(os.path.join(sd, "scene.json")))
-    meta = json.load(open(os.path.join(data, "braindance_meta.json")))
+    meta = json.load(open(os.path.join(data, "scene_meta.json")))
     src = S["src_dir"]
     sync = json.load(open(os.path.join(src, "sync.json")))
     t0, dur = S["clip_start"], S["duration"]

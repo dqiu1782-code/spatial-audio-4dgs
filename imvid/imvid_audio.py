@@ -6,7 +6,7 @@
 2. Audio-only localisation: SRP-PHAT over all mic pairs on a 3D grid (coarse 10 cm, fine 2 cm), per
    0.25 s window, offsets compensated. Compared with the video mouth track.
 3. Dry voice: delay-and-sum beamformer over all 39 recorders steered at the source.
-4. Sound scene for braindance_viewer.py (scene.json, result.json, FLACs).
+4. Sound scene for spatial_viewer.py (scene.json, result.json, FLACs).
 
   python imvid_audio.py DATA AUDIO_DIR [--win_src E:\\4dgs_data\\imvid_opera\\sound]
 """
@@ -60,7 +60,7 @@ def main():
     ap.add_argument("--win_src", default=r"E:\4dgs_data\imvid_opera\sound")
     ap.add_argument("--onset_search", nargs=2, type=float, default=(2.0, 3.5))
     a = ap.parse_args()
-    meta = json.load(open(os.path.join(a.data, "braindance_meta.json")))
+    meta = json.load(open(os.path.join(a.data, "scene_meta.json")))
     assert meta.get("metric"), "run imvid_finalize.py first"
     tr = json.load(open(os.path.join(a.data, "face_track.json")))
     names = sorted(meta["cameras"])

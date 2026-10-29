@@ -191,10 +191,10 @@ def simulate(rig, dur=40.0, fs=16000, seed=0, n_talkers=2, snr_db=30.0, rt60=0.4
 
 
 def cached_simulation(rig, rig_path, **kw):
-    """Simulate once per rig file; cache under $BRAINDANCE_CACHE or <package>/cache."""
+    """Simulate once per rig file; cache under $SA4DGS_CACHE or <package>/cache."""
     import os
     import pickle
-    root = os.environ.get("BRAINDANCE_CACHE", os.path.join(os.path.dirname(os.path.abspath(__file__)), "cache"))
+    root = os.environ.get("SA4DGS_CACHE", os.path.join(os.path.dirname(os.path.abspath(__file__)), "cache"))
     os.makedirs(root, exist_ok=True)
     import hashlib
     import json
